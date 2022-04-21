@@ -8,9 +8,12 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit5-01-HTML-Slider-Example/sw.js", {
-    scope: "/ICS2O-Unit5-01-HTML-Slider-Example/",
-  })
+  navigator.serviceWorker.register(
+    "/ICS2O-Unit5-01-HTML-Slider-Example/sw.js",
+    {
+      scope: "/ICS2O-Unit5-01-HTML-Slider-Example/",
+    }
+  )
 }
 
 /**
@@ -24,5 +27,6 @@ function updateSliderValue(valueFromSlider) {
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Value is: " + slider.value + "</p>"
+  document.getElementById("hello-world").innerHTML =
+    "<p>Value is: " + slider.value + "</p>"
 }
