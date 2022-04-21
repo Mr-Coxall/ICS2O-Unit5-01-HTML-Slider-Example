@@ -39,9 +39,13 @@
         </div>  
         <!-- Slider with Starting Value -->
         <!-- Note: I added and ID to this component, so I could reference it in code -->
-        <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
+        <!-- Note: I also placed it inside a "label" for accessability -->
+        <label>
+          Slider's Value
+          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
           min="0" max="10" value="2" tabindex="0"
           onchange = "updateSliderValue(this.value)">
+        </label>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
